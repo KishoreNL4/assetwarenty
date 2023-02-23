@@ -1,0 +1,61 @@
+.bt1 {
+  width: fit-content;
+  height: 45px;
+  background: #ffffff0d;
+  border-radius: 8px;
+  border: 2px solid #e8e8e8;
+  font-size: 15px;
+  font-weight: bold;
+  color: #f9f4f4;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  position: relative;
+  overflow: hidden;
+  padding: 10px 25px;
+  z-index: 1;
+
+}
+
+
+
+.bt1:before {
+  width: 50%;
+  height: 100%;
+  content: "";
+  margin: auto;
+  position: absolute;
+  top: 0%;
+  left: -50%;
+  background: #f3f3f3;
+  transition: all 0.5s ease;
+  z-index: -1;
+}
+
+.bt1:after {
+  width: 50%;
+  height: 100%;
+  content: "";
+  margin: auto;
+  position: absolute;
+  top: 0%;
+  left: 100%;
+  
+  background: #f4f4f4;
+  transition: all 0.5s ease;
+  z-index: -1;
+}
+
+.bt1:hover {
+  color: gray;
+  cursor: pointer;
+}
+
+.bt1:hover:before {
+  top: 0;
+  left: 0;
+}
+
+.bt1:hover:after {
+  top: 0;
+  left: 50%;
+}
